@@ -1,7 +1,8 @@
 #ifndef MAIN_h
 #define MAIN_h
+#include <stdio.h>
 
-void putchar();
+int putchar(char x);
 
 #endif
 

@@ -1,5 +1,4 @@
-#include "lib.h"
-
+#include "main.h"
 
 void putchar()
 {
