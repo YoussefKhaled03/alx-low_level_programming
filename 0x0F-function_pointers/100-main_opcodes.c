@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- * @argc: the numbers of args
- * @argv: argument vector
- *
- * RETURN: Always 0.
-*/
+ * main - prints its own opcodes
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: Always 0 (Success)
+ */
+
 
 int main(int argc, char **argv)
 {

@@ -1,12 +1,13 @@
 #include "3-calc.h"
 
 /**
- * op_add - return the sum of a & b
- * @a: first num
- * @a: second num
- *
- * RETURN: a + b
-*/
+	 * op_add - Returns the sum of two numbers.
+	 * @a: The first number.
+	 * @b: The second number.
+	 *
+	 * Return: The sum of a and b.
+	 */
+
 int op_add(int a, int b)
 {
 	return (a + b);
@@ -17,7 +18,7 @@ int op_add(int a, int b)
  * @a: first num
  * @b: second num
  *
- * RETURN: a - b
+ * RETURN: the sub
 */
 int op_sub(int a, int b)
 {
@@ -29,7 +30,7 @@ int op_sub(int a, int b)
  * @a: first num
  * @b: second num
  *
- * RETURN: a * b
+ * RETURN: the
 */
 int op_mul(int a, int b)
 {
