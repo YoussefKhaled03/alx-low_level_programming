@@ -8,12 +8,12 @@
 
 size_t list_len(const list_t *h)
 {
-	const list_t* hh = h;
+	list_t const *hh = h;
 	int i = 0;
 
 	if (h == NULL)
 		return (0);
-	while (hh->str != NULL) 
+	while (hh->str != NULL)
 	{
 		i++;
 		hh = hh->next;
