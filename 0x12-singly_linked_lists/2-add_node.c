@@ -3,7 +3,10 @@
 #include <string.h>
 
 /**
-*
+* *add_node - add a new node
+* @head: the start pointer
+* @str: the string in the node
+* Return: the new node.
 */
 
 list_t *add_node(list_t **head, const char *str)
