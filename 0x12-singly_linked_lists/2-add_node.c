@@ -20,5 +20,6 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	nwptr->len = strlen(str);
 	nwptr->next = *head;
+	*head = nwptr;
 	return (nwptr);
 }
