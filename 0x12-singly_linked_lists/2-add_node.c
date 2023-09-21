@@ -10,9 +10,9 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *nwptr = malloc(sizeof(list_t));
 
-	if(!head || !nwptr)
+	if (!head || !nwptr)
 		return (0);
-	nwptr->str = strdup(str) ;
+	nwptr->str = strdup(str);
 	if (!nwptr->str)
 	{
 		free(nwptr);
