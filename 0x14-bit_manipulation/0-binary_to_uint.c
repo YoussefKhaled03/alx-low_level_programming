@@ -8,7 +8,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int x = 0, n, i;
+	int x = 0, n = 1, i;
 	unsigned int sum;
 
 	if (!b)
@@ -16,7 +16,6 @@ unsigned int binary_to_uint(const char *b)
 	while (b[x])
 		x++;
 
-	n = 2 ^ x;
 	for (i = 0; i < x; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
@@ -26,7 +25,7 @@ unsigned int binary_to_uint(const char *b)
 		else
 		{
 			sum = sum + n * (b[i] - '0');
-			n -= n;
+			n *= 2;
 		}
 	}
 	return (sum);
