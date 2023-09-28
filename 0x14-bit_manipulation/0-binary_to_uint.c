@@ -9,13 +9,13 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int x = 0, n = 1;
-	unsigned int sum;
+	unsigned int sum = 0;
 
 	if (!b)
 		return (0);
 	while (b[x])
 		x++;
-
+	x--;
 	for (; x >= 0 ; x--)
 	{
 		if (b[x] != '0' && b[x] != '1')
