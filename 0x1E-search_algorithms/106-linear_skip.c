@@ -14,27 +14,27 @@
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
-    skiplist_t *node, *next;
+	skiplist_t *node, *next;
 
-    if (list == NULL)
-        return (NULL);
+	if (list == NULL)
+		return (NULL);
 
-    for (node = next = list; next != NULL;)
-    {
-        node = next;
-        if (next->express == NULL || next->express->n >= value)
-            break;
-        next = next->express;
-        printf("Value checked at index [%lu] = [%d]\n", next->index, next->n);
-    }
-    printf("Value found between indexes [%lu] and [%lu]\n", node->index, next->index);
+	for (node = next = list; next != NULL;)
+	{
+		node = next;
+		if (next->express == NULL || next->express->n >= value)
+			break;
+		next = next->express;
+		printf("Value checked at index [%lu] = [%d]\n", next->index, next->n);
+	}
+	printf("Value found between indexes [%lu] and [%lu]\n", node->index, next->index);
 
-    for (; node != NULL && node->index <= next->index; node = node->next)
-    {
-        printf("Value checked at index [%lu] = [%d]\n", node->index, node->n);
-        if (node->n == value)
-            return (node);
-    }
+	for (; node != NULL && node->index <= next->index; node = node->next)
+	{
+		printf("Value checked at index [%lu] = [%d]\n", node->index, node->n);
+		if (node->n == value)
+			return (node);
+	}
 
-    return (NULL);
+	return (NULL);
 }
